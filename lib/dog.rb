@@ -1,1 +1,20 @@
-# Add your code here
+class Dog 
+  @@all = []
+attr_a :name 
+def initialize(name) 
+  @name = name 
+  self.save 
+end 
+
+def self.all 
+  @@all
+end 
+
+def self.clear_all
+  self.all.clear
+  @@all.clear
+  @@all = []
+end 
+
+def self.print_all
+  self.all each do |dog|
