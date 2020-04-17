@@ -22,7 +22,7 @@ def self.clear_all
 end 
 
 def self.print_all
-  self.all each do |dog|
+  self.all.each do |dog|
     puts dog.name
   end 
 end 
